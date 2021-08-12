@@ -28,6 +28,6 @@ http {
     #gzip  on;
 
     {% for i in vhost_p %}
-    path {{ i }}; 
+    include {{ i }}; 
     {% endfor %}
 }
